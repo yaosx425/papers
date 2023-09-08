@@ -74,11 +74,11 @@ State-of-the-art object detection networks depend on region proposal algorithms 
 
 Faster R-CNN网络的图像处理过程：
 
-<img src="C:\Users\15077\AppData\Roaming\Typora\typora-user-images\image-20230907164538525.png" alt="image-20230907164538525" style="zoom:150%;" />
+<img src="https://files.catbox.moe/50qm90.png" alt="image-20230907164538525" style="zoom:150%;" />
 
 图像处理流程如下：
 
-![image-20230908095129628](C:\Users\15077\AppData\Roaming\Typora\typora-user-images\image-20230908095129628.png)
+![image-20230908095129628](https://files.catbox.moe/xs8d3u.png)
 
 
 
@@ -117,7 +117,7 @@ Faster R-CNN**没有指定的特定数据集**，它可以应用于各种不同�
 
 1. ZF网络在PASCAL VOC 2007测试集上每个锚点的**平均候选框**大小
 
-![image-20230908150103337](C:\Users\15077\AppData\Roaming\Typora\typora-user-images\image-20230908150103337.png)
+![image-20230908150103337](https://files.catbox.moe/jfei6u.png)
 
 实验目的：有助于更好地**理解和解释模型的性能**，并可以指导后续的优化和改进。
 
@@ -127,7 +127,7 @@ Faster R-CNN**没有指定的特定数据集**，它可以应用于各种不同�
 
 2. 在PASCAL VOC 2007 test set和VOC 2007 train set上的效果
 
-![image-20230908150415127](C:\Users\15077\AppData\Roaming\Typora\typora-user-images\image-20230908150415127.png)
+![image-20230908150415127](https://files.catbox.moe/finoam.png)
 
 目的是比较使用不同提议方法的**Fast R-CNN with ZF模型的性能**。这些方法可能会影响模型的召回率、准确率和速度等因素。
 
@@ -139,7 +139,7 @@ Faster R-CNN**没有指定的特定数据集**，它可以应用于各种不同�
 
 3. 同样的测试集，训练集是PASCAL VOC 2007和PASCAL VOC 2012，检测器为Fast R-CNN和VGG-16
 
-![image-20230908150701774](C:\Users\15077\AppData\Roaming\Typora\typora-user-images\image-20230908150701774.png)
+![image-20230908150701774](https://files.catbox.moe/q32azw.png)
 
 实验目的：
 
@@ -155,7 +155,7 @@ Faster R-CNN**没有指定的特定数据集**，它可以应用于各种不同�
 
 4. 测试集是PASCAL VOC 2012 test set，Training data: “07”: VOC 2007 trainval, “07++12”: union set of VOC 2007 trainval+test and VOC 2012 trainval，检测器为Fast R-CNN和VGG-16
 
-![image-20230908151434850](C:\Users\15077\AppData\Roaming\Typora\typora-user-images\image-20230908151434850.png)
+![image-20230908151434850](https://files.catbox.moe/m5l16k.png)
 
 实验目的：与第三大致相同...
 
@@ -165,13 +165,13 @@ Faster R-CNN**没有指定的特定数据集**，它可以应用于各种不同�
 
 5. 评估在K40 GPU上使用Fast R-CNN和VGG-16模型进行目标检测时的运行时间
 
-   ![image-20230908151943190](C:\Users\15077\AppData\Roaming\Typora\typora-user-images\image-20230908151943190.png)
+   ![image-20230908151943190](https://files.catbox.moe/98dogx.png)
 
 使用了**不同部分的时间统计**，包括**SS候选框生成方法**在CPU上的评估时间以及**区域合并**、**池化**、**全连接**和**softmax**等层的时间。**目的**是评估模型的运行时间、比较不同模块的时间开销。
 
 
 
-6. 测试集是PASCAL VOC 2007 test set和PASCAL VOC 2012 test set，检测器为Fast R-CNN和VGG-16，比较了不同物体的检测的mAP![image-20230908152444796](C:\Users\15077\AppData\Roaming\Typora\typora-user-images\image-20230908152444796.png)
+6. 测试集是PASCAL VOC 2007 test set和PASCAL VOC 2012 test set，检测器为Fast R-CNN和VGG-16，比较了不同物体的检测的mAP![image-20230908152444796](https://files.catbox.moe/gbguu4.png)
 
 实验目的：比较RPN和RPN∗的效果...
 
@@ -179,13 +179,13 @@ Faster R-CNN**没有指定的特定数据集**，它可以应用于各种不同�
 
 7. 测试**锚的尺寸和纵横比、超参数以及建议框的数量**对平均精度mAP的影响
 
-   ![image-20230908152937425](C:\Users\15077\AppData\Roaming\Typora\typora-user-images\image-20230908152937425.png)
+   ![image-20230908152937425](https://files.catbox.moe/h4j6ht.png)
 
 
 
 8. **one-stage detection vs Two-Stage Proposal + Detection**
 
-![image-20230908153136486](C:\Users\15077\AppData\Roaming\Typora\typora-user-images\image-20230908153136486.png)
+![image-20230908153136486](https://files.catbox.moe/i4nh8l.png)
 
 
 
@@ -193,7 +193,7 @@ Faster R-CNN**没有指定的特定数据集**，它可以应用于各种不同�
 
 9. 更换不同的数据集，**MS COCO dataset**，模型是VGG-16，测试效果...
 
-   ![image-20230908153356547](C:\Users\15077\AppData\Roaming\Typora\typora-user-images\image-20230908153356547.png)
+   ![image-20230908153356547](https://files.catbox.moe/kg0u5s.png)
 
 
 
@@ -201,7 +201,7 @@ Faster R-CNN**没有指定的特定数据集**，它可以应用于各种不同�
 
 10. 测试不同的训练集，VOC07、VOC07+12、VOC07++12、COCO(no VOC)、COCO+VOC07+12、COCO+VOC07++12。模型是VGG-16,测试集是PASCAL VOC 2007和PASCAL VOC 2012。
 
-    ![image-20230908154343154](C:\Users\15077\AppData\Roaming\Typora\typora-user-images\image-20230908154343154.png)
+    ![image-20230908154343154](https://files.catbox.moe/05a178.png)
 
 
 
