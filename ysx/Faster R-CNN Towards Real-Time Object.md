@@ -1,6 +1,6 @@
 # 日期
 
-## 2023.09.15
+## 2023.09.08
 
 # 论文标题
 
@@ -74,7 +74,7 @@ State-of-the-art object detection networks depend on region proposal algorithms 
 
 Faster R-CNN网络的图像处理过程：
 
-<img src="https://files.catbox.moe/50qm90.png" alt="image-20230907164538525" style="zoom:150%;" />
+![image-20230908095129628](https://files.catbox.moe/50qm90.png)
 
 图像处理流程如下：
 
